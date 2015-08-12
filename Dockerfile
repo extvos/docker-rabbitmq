@@ -26,8 +26,8 @@ VOLUME /var/lib/rabbitmq
 COPY entrypoint.sh /
 
 # add a symlink to the .erlang.cookie in /root so we can "docker exec rabbitmqctl ..." without gosu
-RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/ \
-	&& chmod +x /entrypoint.sh
+# RUN ln -sf /var/lib/rabbitmq/.erlang.cookie /root/ \
+RUN chmod +x /entrypoint.sh
 
 
 ENTRYPOINT ["/entrypoint.sh"]
