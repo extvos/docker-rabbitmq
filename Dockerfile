@@ -14,7 +14,7 @@ RUN yum install -y ca-certificates \
 	&& tini -h
 
 RUN yum install -y http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm \
-	&& yum install -y http://packages.erlang-solutions.com/site/esl/esl-erlang/FLAVOUR_3_general/esl-erlang_18.0-1~centos~6_amd64.rpm \
+	&& yum install -y erlang \
 	&& rpm --import https://www.rabbitmq.com/rabbitmq-signing-key-public.asc \
 	&& yum install -y https://www.rabbitmq.com/releases/rabbitmq-server/v3.5.4/rabbitmq-server-3.5.4-1.noarch.rpm
 
