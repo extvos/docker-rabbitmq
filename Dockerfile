@@ -1,7 +1,5 @@
 FROM extvos/centos
-
 MAINTAINER  "Mingcai SHEN <archsh@gmail.com>"
-
 ENV RABBITMQ_VERSION 3.5.4-1
 ENV RABBITMQ_LOGS=- RABBITMQ_SASL_LOGS=-
 
